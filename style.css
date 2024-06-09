@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Green color */
+    padding: 10px 20px;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#nav-left span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#nav-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+#search-bar {
+    width: 500px; /* Increased width */
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#content {
+    display: flex;
+    padding: 20px;
+}
+
+#sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+#main-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#results-section {
+    margin-top: 20px;
+}
+
+.recipe-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.recipe-item:hover {
+    background-color: #f0f0f0;
+}
+
+#recipe-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#ingredient-list {
+    display: none;
+    margin-top: 10px;
+}
+
+#ingredient-list label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#sidebar h3 + div {
+    position: relative;
+}
+
+#sidebar h3 + div button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+} 
+
+
+.button1 {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 220px;
+    padding: 10px 20px;
+} 
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.ingredients{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients button{
+    background-color: #e8f5e9;
+    height: 10px;
+    padding: 0px 0px;
+}
+
+.calorie-filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calorie-filters input {
+    width: 45%;
+}
+
+.recipe-details {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+

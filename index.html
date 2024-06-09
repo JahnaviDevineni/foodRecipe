@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-left">
+                <span>Recipe Finder</span>
+            </div>
+            <div id="nav-center">
+                <input type="text" id="search-bar" placeholder="Search for a recipe...">
+                <button onclick="searchRecipe()" class="button" >Search</button>
+            </div>
+            <div id="nav-right">
+                <a href="https://github.com/your-github-profile" target="_blank">
+                    <img src="github-logo.png" alt="GitHub" class="nav-icon">
+                </a>
+                <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="linkedin-logo.png" alt="LinkedIn" class="nav-icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="sidebar">
+            <h3>Filter Recipes</h3>
+            <div id="ingredients">
+                <h3>Ingredients</h3>
+                <button id="show-ingredients" onclick="toggleIngredients(true)">&#9660;</button>
+                <button id="hide-ingredients" onclick="toggleIngredients(false)" style="display:none;">&#9650;</button>
+            </div>
+            <div id="ingredient-list"></div>
+            <h3>Calories</h3>
+            <div class="calorie-filters">
+                <input type="number" id="min-calorie-filter" placeholder="Min Calories">
+                <input type="number" id="max-calorie-filter" placeholder="Max Calories">
+            </div>
+            <h3>Vegetarian</h3>
+            <input type="checkbox" id="veg-filter">
+            <label for="veg-filter">Vegetarian Only</label>
+            <br><br>
+            <button onclick="filterRecipes()"  class="button1">Filter</button>
+        </div>
+        <div id="main-content">
+            <div id="results-section"></div>
+            <div id="recipe-details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
